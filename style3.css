@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --gradient: linear-gradient(to right, rgb(78, 17, 175), rgb(136, 5, 168), purple, rgb(194, 59, 59), red);
+}
+
+.top {
+    background: var(--gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    gap: 1em;
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+
+div span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+
+}
+
+.main {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/42f3cd9f-c9a8-4cae-8c03-3e7aa13e0154/web/PK-en-20260727-TRIFECTA-perspective_bd4f414c-c82a-4294-a4bb-1d71a8bdeed6_large.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(2000px, 100vw);
+    width: 100vw;
+    height: 98vh;
+    position: relative;
+    top: 60px;
+    z-index: 10;
+}
+
+.main .filter {
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: max(95vh, 2000px);
+}
+
+nav {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.logo img {
+    width: 150px;
+    padding: 2em;
+}
+
+.sign-in {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in:hover {
+    filter: brightness(0.9);
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.text {
+    margin: auto;
+    padding: auto;
+    max-width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 10;
+    gap: 6px;
+
+}
+
+.heading h1 {
+    margin-top: 50px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.25em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.plan p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.email p {
+    color: rgba(255, 255, 255, 0.89);
+    font-family: sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+textarea {
+    width: 500px;
+    height: 40px;
+    border: 2px light white;
+    border-radius: 6px;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+    align-content: center;
+    padding: 0px 10px;
+    margin-top: 5px;
+}
+
+.trial {
+    margin-top: 15px;
+    padding: 0px 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
+    font-weight: 650;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.849);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 260px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.trial:hover {
+    filter: brightness(0.9);
+}
+
+.terms {
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 6px;
+    color: rgba(255, 255, 255, 0.808);
+}
+
+.horizontal-scroll {
+    background-color: black;
+    width: 100vw;
+    height: 45vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+}
+
+.scroll-bar {
+    background-color: black;
+    height: 35vh;
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 280px;
+    gap: 1em;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+
+.horizontal-scroll p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.75em;
+    font-weight: bold;
+    padding: 0 100px;
+
+}
+
+.films {
+    width: 180px;
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.film1 {
+    background-image: url(https://occ-0-3652-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdrbIlESpRzDNKOO5n1S6kginBlgsp4aPgGDzSGUVpChCBIuP2WgaG_Xo8uqRfpE0OPwdFKvvLrIaa5pa8VdvkBj4i7EX5Qoz3Hhpxhl757ogB7PZ_9RnkoBV4l6ZuRQHkTE.webp?r=bc4);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.film2 {
+    background-image: url(https://occ-0-3652-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABV634RJ705XipxQXbUOmWTlPM6NMLGOMgv8O6-1mpxjUiHuGTO8aU_smM_58vn7E3eNAHVvWJq0PdI-Nfb186hH-lCfPKhOAdpg.webp?r=92a);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.film3 {
+    background-image: url(https://occ-0-3652-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWQnjEgoKoL20AK_MX_UXqWOqwvyE2a7W5yThmnL5CWSUMm6-YTio7Kh-mYcxjprRrLQcGzfm5KgRzXmJbz8kCmYXDlkq4d_YrH8kCGGS3b6RA3T7F65C1146Yuk4Vn7ziWj.webp?r=6b0);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.film4 {
+    background-image: url(https://occ-0-3652-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABerq2ClNRPIEQaqVmLtb1SR3gf9NPVOHyqmAcfdlJwpJNnL5TaURY3KHjDsGDAHvZ1YJ2hm8pL0tAROFD4jOYPfJ3iHZzC6BgCO7GYr_cAMSFflVHyPhJnmHIb25TQISUf3n.webp?r=d33);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.film5 {
+    background-image: url(https://occ-0-3652-58.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYMJOpwnAZIoMUgOROfg4f5HaS2Rs-vsp9ue-oVi_GpL52CBKfYbmqe7miOu8l3BDGv-6_r-5SsZUrBb4vPxDuKNnZotR0Un3O4Kyxh5fgqD2BnjYtqM4mKoepuEZeZrYfF5.webp?r=627);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+
+.films p {
+    color: black;
+    -webkit-text-stroke: 1px white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 7em;
+    padding: 0px;
+    margin: 0px;
+}
+
+.films:hover {
+    transition: all 0.5s cubic-bezier(0.34, 0.97, 1, 1.03) 0s;
+    transform: scale(1.05);
+}
+
+.reasons {
+    background-color: black;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+}
+
+.reasons p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.75em;
+    font-weight: bold;
+    padding: 0 100px;
+    margin-top: 60px;
+}
+
+.card-outline {
+    background-color: black;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    justify-content: space-between;
+    align-content: flex-end;
+    position: relative;
+    z-index: 100;
+}
+
+.cards {
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: linear-gradient(160deg, #1a2246 0%, #1e1a34 45%, #21101e 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.cards h1 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+    padding: 10px 15px;
+    margin-top: 15px;
+
+}
+
+.cards p {
+    color: rgba(255, 255, 255, 0.589);
+    font-size: 1.2em;
+    padding: 0px 15px;
+    margin-top: 0;
+}
+.faq {
+    background-color: black;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+}
+.faq p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.75em;
+    font-weight: bold;
+    padding: 0 100px;
+    margin-top: 60px;
+}
+.faq-outline {
+    background-color: black;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    justify-content: space-between;
+    align-content: flex-end;
+    position: relative;
+    z-index: 100;
+}
+.questions {
+    width: 75vw;
+    height: 90px;
+    border: 2px solid black;
+    background-color: rgba(128, 128, 128, 0.336);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+}
+.questions p {
+    color: rgb(255, 255, 255);
+    font-size: 1.75em;
+    font-weight: 400;
+    margin: 12px;
+    padding: 20px;
+}
